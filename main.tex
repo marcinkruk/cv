@@ -1,0 +1,157 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Template
+% Version 1.0 (28/1/19)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{developercv} % Default font size, values from 8-12pt are recommended
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.7\textwidth} % 45% of the page width for name
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% If your name is very short, use just one of the lines below
+	% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
+	\colorbox{COLOR_1}{\href{https://www.linkedin.com/in/marcin-kruk-a5486111a/}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Marcin Kruk}}}}}} % First name
+	
+%	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Kruk}}}}} % Last name
+	
+	\vspace{10pt}
+	
+	{\huge Physicist who does software} % Career or current job title
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{Phone}{12}{+48 694 750 175}\\
+	\icon{Envelope}{12}{\href{mailto:marcin0kruk@gmail.com}{marcin0kruk@gmail.com}}\\
+	\icon{Github}{12}{\href{https://github.com/marcinkruk}{github.com/marcinkruk}}\\
+\end{minipage}
+
+\vspace{0.5cm}
+
+\cvsect{About}
+
+ %   \begin{center}
+ %   \begin{minipage}[t]{0.75\textwidth}
+ %   \begin{center}
+%    \textit{
+    I'm a physics graduate with relevant software development experience. After a~professional excursion into computer security and space business, I'm seeking a~career opportunity where I could use my software development skills in~conjunction with my education as a~physicist.
+%    }
+%    \end{center}
+%    \end{minipage}
+%    \end{center}
+
+\hfill % Whitespace between
+
+\cvsect{Experience}
+\begin{entrylist}
+	\entry
+		{2017 -- present}
+		{\href{https://astripolska.pl/}{Astri Polska}}
+		{Software Developer}
+		{Software development, integration and validation of rack cabinets for multiple ESA missions. Satellite models implementation, integration and testing for THEOS2 programme. Technical Officer, software development and integration of a many component environment for EGS-CC in ACCEPTO project.  CICD setup for Jenkins and Gitlab-cicd. Development of real-time simulator framework in Rust.\\ \texttt{C++}\slashsep\texttt{Java}\slashsep\texttt{SpringBoot}\slashsep\texttt{Gitlab-CI}\slashsep\texttt{Docker}\slashsep\texttt{Rust}\slashsep\texttt{Linux}}
+	\entry
+		{2016}
+		{\href{https://fudosecurity.com/}{Fudo Security}}
+		{Junior Software Developer}
+		{ \texttt{C}\slashsep\texttt{FreeBSD}\slashsep\texttt{Postgres}}
+\end{entrylist}
+
+\cvsect{Skills}
+
+\begin{minipage}[t]{0.3\textwidth}
+\vspace{-\baselineskip}
+\begin{barchart}{2.5}
+	\baritem{C++}{100}
+	\baritem{GNU/Linux}{90}
+	\baritem{Rust}{30}
+\end{barchart}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\vspace{-\baselineskip}
+\begin{barchart}{2.5}
+	\baritem{Java}{90}
+	\baritem{SpringBoot}{50}
+	\baritem{Python}{20}
+\end{barchart}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\vspace{-\baselineskip}
+\begin{barchart}{2.5}
+	\baritem{Git and CI}{70}
+	\baritem{Docker}{40}
+	\baritem{Databases}{15}
+\end{barchart}
+\end{minipage}
+
+\cvsect{Education}
+
+\begin{entrylist}
+	\entry
+		{2014 -- 2021}
+		{\href{https://www.fuw.edu.pl/}{Physics, University of Warsaw}}
+		{Master's degree}
+		{Specialization: Mathematical and computer modelling of physical phenomena.\\
+		\href{https://github.com/marcinkruk/mgr/blob/master/mkruk-thesis-20210915.pdf}{Thesis: Multiscale nonlinear Granger causality in currency exchange markets.}}
+	\entry
+		{2011 -- 2014}
+		{\href{https://www.fuw.edu.pl/}{Nanostructures engineering, University of Warsaw}}
+		{Bachelor's degree}
+		{A combined physics and chemistry course.\\
+		\href{https://github.com/marcinkruk/mgr/blob/master/lic/mkruk-lic.pdf}{Thesis: Long-range asymptotic behaviour of molecular hydrogen wavefunction.}}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.23\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	\cvsect{Languages}
+	
+	\textbf{Polish} -- native\\
+	\textbf{English} -- proficient\\
+	\textbf{German} -- basic
+\end{minipage}
+\begin{minipage}[t]{0.75\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{Interests}
+	
+	\textbf{\href{https://www.facebook.com/AKSZlyKosmodysk}{Ultimate Frisbee}} -- I play on competitive european level and manage the team.\\
+	\textbf{Sailing} -- I used to teach sailing on summer youth camps.
+\end{minipage}
+\hfill
+
+\vspace{\fill}
+\footnotesize{Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu tej oraz przyszłych rekrutacji (zgodnie z ustawą z dnia 10 maja 2018 roku o ochronie danych osobowych (Dz. Ustaw z 2018, poz. 1000) oraz zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO)).}
+%----------------------------------------------------------------------------------------
+
+\end{document}
