@@ -164,7 +164,7 @@
 
 % Command to output a bubble at a specific position with a specific size
 \newcommand{\bubble}[5]{
-	\filldraw[fill=black, draw=none] (#1,0.5) circle (#3); % Bubble
+	\filldraw[fill=COLOR_2, draw=none] (#1,0.5) circle (#3); % Bubble
 	\node[label=\textcolor{black}{#4}] at (#1,0.7) {}; % Label
 }
 
@@ -174,7 +174,7 @@
 
 % Command to output section title headings
 \newcommand{\cvsect}[1]{% The only parameter is the section text
-	\vspace{1.9\baselineskip} % Whitespace before the section title
+	\vspace{1.2\baselineskip} % Whitespace before the section title
 	\colorbox{COLOR_1}{\textcolor{white}{\MakeUppercase{\textbf{#1}}}}\\% Section title
 }
 
@@ -196,14 +196,14 @@
 }
 
 \newcommand{\entry}[4]{% First argument for the leftmost date(s) text, second is for the bold entry heading, third is for the bold right-aligned entry qualifier and the fourth is for the entry description
-	\parbox[t]{0.175\textwidth}{% 17.5% of the text width of the page
+	\parbox[t]{0.13\textwidth}{% 17.5% of the text width of the page
 		#1 % Leftmost entry date(s) text
 	}%
-	&\parbox[t]{0.825\textwidth}{% 82.5% of the text width of the page
+	&\parbox[t]{0.87\textwidth}{% 82.5% of the text width of the page
 		\textbf{#2}% Entry heading text
 		\hfill% Horizontal whitespace
 		{\footnotesize \textbf{\textcolor{black}{#3}}}\\% Right-aligned entry qualifier text
-		#4 % Entry description text
+        #4 % description
 	}\\\\}
 
 % Command to output a separator slash between lists, e.g. '  /  '
